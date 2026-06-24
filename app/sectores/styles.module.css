@@ -1,0 +1,102 @@
+/* app/sectores/styles.module.css */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.alert {
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.success {
+  background-color: #c6f6d5;
+  border: 1px solid #9ae6b4;
+  color: #22543d;
+}
+
+.error {
+  background-color: #fed7d7;
+  border: 1px solid #feb2b2;
+  color: #742a2a;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #edf2f7;
+  padding-bottom: 10px;
+  color: #2d3748;
+}
+
+.noData {
+  text-align: center;
+  color: #718096;
+  padding: 30px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.table th {
+  background-color: #f7fafc;
+  color: #4a5568;
+  font-weight: bold;
+}
+
+.nombreCell {
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.actionsHeader {
+  text-align: right;
+}
+
+.actionCell {
+  text-align: right;
+}
+
+.buttonDelete {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.buttonDelete:hover {
+  background-color: #c53030;
+}
