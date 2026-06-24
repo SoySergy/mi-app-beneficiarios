@@ -79,17 +79,17 @@ export default function ZonasPage() {
           <table className={styles.table}>
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Zona</th>
-                <th className={styles.actionsHeader}>Acción</th>
+                <th className={styles.colId}>ID</th>
+                <th className={styles.colName}>Zona</th>
+                <th className={styles.colAction}>Acción</th>
               </tr>
             </thead>
             <tbody>
               {zonas.map((z) => (
                 <tr key={z.id_zona}>
-                  <td>{z.id_zona}</td>
-                  <td className={styles.nombreCell}>{z.nombre}</td>
-                  <td className={styles.actionCell}>
+                  <td className={styles.colId}>{z.id_zona}</td>
+                  <td className={styles.colName}>{z.nombre}</td>
+                  <td className={styles.colAction}>
                     <button
                       className={styles.buttonDelete}
                       onClick={() => eliminarZona(z.id_zona, z.nombre)}

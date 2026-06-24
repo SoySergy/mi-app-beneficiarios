@@ -72,7 +72,7 @@ export default function ConvocatoriasPage() {
 
   return (
     <div className={styles.container}>
-      <h1>Gestión de Convocatorias (Editar)</h1>
+      <h1>Gestión de Convocatorias</h1>
       <p className={styles.description}>
         Seleccione una convocatoria de la lista para modificar su nombre.
       </p>

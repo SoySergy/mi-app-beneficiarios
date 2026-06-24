@@ -49,10 +49,9 @@ export default function BeneficiariosConsulta() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Consulta de Beneficiarios (Paginado)</h1>
+        <h1>Consulta de Beneficiarios</h1>
         <p className={styles.subtitle}>
-          Mostrando datos integrados mediante un sistema eficiente de páginas. 
-          Total de registros en sistema: <strong>{totalRecords.toLocaleString()}</strong>
+          Total de registros: <strong>{totalRecords.toLocaleString()}</strong>
         </p>
       </header>
 

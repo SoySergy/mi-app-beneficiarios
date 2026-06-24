@@ -6,9 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
+/* Corregido: Fuerza el color del título al del Home principal */
+.container h1 {
+  color: #1a202c !important;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Corregido: Fuerza el color de la descripción a un gris oscuro legible */
 .description {
-  color: #666;
+  color: #4a5568 !important;
   margin-bottom: 25px;
+  font-size: 15px;
 }
 
 .alert {
@@ -66,6 +75,10 @@
   color: #4a5568;
 }
 
+.table td {
+  color: #4a5568;
+}
+
 .buttonEdit {
   background-color: #3182ce;
   color: white;
@@ -97,16 +110,23 @@
   font-size: 14px;
 }
 
-.input, .inputDisabled {
+/* Corregido: Evita que el sistema ponga el input oscuro */
+.input {
   padding: 10px;
   border: 1px solid #cbd5e0;
   border-radius: 4px;
   font-size: 14px;
+  background-color: #ffffff !important;
+  color: #2d3748 !important;
 }
 
 .inputDisabled {
-  background-color: #edf2f7;
-  color: #718096;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #edf2f7 !important;
+  color: #718096 !important;
   cursor: not-allowed;
 }
 

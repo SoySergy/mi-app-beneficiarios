@@ -6,9 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
+/* Corregido: Texto del título */
+.container h1 {
+  color: #1a202c !important;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Corregido: Texto del subtítulo */
 .description {
-  color: #666;
+  color: #4a5568 !important;
   margin-bottom: 25px;
+  font-size: 15px;
 }
 
 .alert {
@@ -77,11 +86,14 @@
   font-size: 14px;
 }
 
+/* Corregido: Input estético con fondo blanco y texto oscuro */
 .input {
   padding: 12px;
   border: 1px solid #cbd5e0;
   border-radius: 4px;
   font-size: 14px;
+  background-color: #ffffff !important;
+  color: #2d3748 !important;
 }
 
 .input:focus {

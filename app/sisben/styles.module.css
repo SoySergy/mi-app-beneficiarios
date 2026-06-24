@@ -6,9 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
+/* Fuerza el color del título al del Home principal con alta prioridad */
+.container h1 {
+  color: #1a202c !important;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Fuerza el color de la descripción a un gris oscuro legible */
 .description {
-  color: #555;
+  color: #4a5568 !important;
   margin-bottom: 25px;
+  font-size: 15px;
 }
 
 .alert {
@@ -47,23 +56,49 @@
   margin-bottom: 20px;
   border-bottom: 1px solid #edf2f7;
   padding-bottom: 10px;
-  color: #2d3748;
+  color: #2d3748 !important;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed; /* Fuerza proporciones exactas en las columnas */
 }
 
+/* Base común para celdas */
 .table th, .table td {
   padding: 12px;
-  text-align: left;
   border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
 }
 
 .table th {
   background-color: #f7fafc;
-  color: #4a5568;
+  color: #4a5568 !important;
+  font-weight: bold;
+}
+
+/* Columna 1: ID (Estrecha y centrada) */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 15%;
+  text-align: center !important;
+  color: #2d3748 !important;
+}
+
+/* Columna 2: Categoría / Nombre (Amplia y alineada a la izquierda de forma perfecta) */
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 55%;
+  text-align: left !important;
+  color: #2d3748 !important;
+}
+
+/* Columna 3: Acción (Centrada con espacio cómodo para el botón) */
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 30%;
+  text-align: center !important;
 }
 
 .buttonEdit {
@@ -73,6 +108,7 @@
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block; /* Asegura centrado correcto */
 }
 
 .buttonEdit:hover {
@@ -93,20 +129,27 @@
 
 .formGroup label {
   font-weight: bold;
-  color: #4a5568;
+  color: #4a5568 !important;
   font-size: 14px;
 }
 
-.input, .inputDisabled {
+/* Inputs estéticos */
+.input {
   padding: 10px;
   border: 1px solid #cbd5e0;
   border-radius: 4px;
   font-size: 14px;
+  background-color: #ffffff !important;
+  color: #2d3748 !important;
 }
 
 .inputDisabled {
-  background-color: #edf2f7;
-  color: #718096;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #edf2f7 !important;
+  color: #718096 !important;
   cursor: not-allowed;
 }
 
@@ -144,6 +187,6 @@
 }
 
 .placeholderText {
-  color: #718096;
+  color: #718096 !important;
   font-style: italic;
 }

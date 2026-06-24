@@ -99,7 +99,7 @@ export default function GruposEtnicosPage() {
 
         {/* Lado derecho: Lista */}
         <div className={styles.card}>
-          <h2>Grupos Étnicos Registrados (Últimos agregados)</h2>
+          <h2>Grupos Étnicos Registrados</h2>
           {loading ? (
             <p>Cargando lista...</p>
           ) : (

@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --background: #fafafa;
   --foreground: #fff;
 
@@ -95,7 +95,7 @@ a.secondary {
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -139,4 +139,154 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+} */
+
+
+
+/* app/page.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 30px;
+  color: #1a202c;
+  margin: 0 0 10px 0;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cardGroup {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.cardGroup h2 {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.groupDescription {
+  font-size: 13px;
+  color: #718096;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.card p {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Botones de colores unificados */
+.btnBlue, .btnOrange, .btnGreen, .btnRed {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.btnBlue {
+  background-color: #3182ce;
+  color: #ffffff;
+}
+.btnBlue:hover {
+  background-color: #2b6cb0;
+}
+
+.btnOrange {
+  background-color: #dd6b20;
+  color: #ffffff;
+}
+.btnOrange:hover {
+  background-color: #c05621;
+}
+
+.btnGreen {
+  background-color: #38a169;
+  color: #ffffff;
+}
+.btnGreen:hover {
+  background-color: #2f855a;
+}
+
+.btnRed {
+  background-color: #e53e3e;
+  color: #ffffff;
+}
+.btnRed:hover {
+  background-color: #c53030;
+}
+
+/* Indicadores de color laterales por tipo de grupo */
+.consultaGroup { border-top: 4px solid #3182ce; }
+.updateGroup { border-top: 4px solid #dd6b20; }
+.insertGroup { border-top: 4px solid #38a169; }
+.deleteGroup { border-top: 4px solid #e53e3e; }
